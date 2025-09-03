@@ -13,7 +13,7 @@ body {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #6b7280;
     line-height: 1.7;
     background: linear-gradient(135deg, #f8fafc 0%, #e3e6ea 100%);
     transition: background 0.5s;
@@ -319,7 +319,7 @@ section {
 
 section h2 {
     font-size: 3em;
-    color: #1e293b;
+    color: #9ca3af;
     text-align: center;
     margin-bottom: 50px;
     position: relative;
@@ -358,9 +358,135 @@ section h2::after {
 .about-text .lead {
     font-size: 1.3em;
     font-weight: 600;
-    color: #374151;
+    color: #9ca3af;
     margin-bottom: 30px;
     text-align: center;
+}
+
+/* Driver Team Section */
+.drivers-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.drivers-section h3 {
+    font-size: 2.2em;
+    color: #9ca3af;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.drivers-section h3 i {
+    color: #f59e0b;
+    margin-right: 15px;
+}
+
+.drivers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.driver-card {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(245,158,11,0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.driver-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(30,41,59,0.15);
+    border: 1px solid #f59e0b;
+}
+
+.driver-image {
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.driver-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f59e0b;
+    box-shadow: 0 8px 25px rgba(245,158,11,0.3);
+    transition: all 0.3s ease;
+}
+
+.driver-card:hover .driver-image img {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(245,158,11,0.4);
+}
+
+.driver-badge {
+    position: absolute;
+    bottom: 5px;
+    right: -5px;
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(245,158,11,0.3);
+}
+
+.driver-info h4 {
+    font-size: 1.4em;
+    color: #9ca3af;
+    margin: 15px 0 8px 0;
+    font-weight: 700;
+}
+
+.driver-title {
+    color: #9ca3af;
+    font-weight: 600;
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.driver-experience {
+    color: #f59e0b;
+    font-weight: 700;
+    margin: 5px 0 15px 0;
+    font-size: 0.9em;
+}
+
+.driver-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.driver-skills span {
+    background: rgba(245,158,11,0.1);
+    color: #9ca3af;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    border: 1px solid rgba(245,158,11,0.2);
+    transition: all 0.3s ease;
+}
+
+.driver-skills span:hover {
+    background: rgba(245,158,11,0.2);
+    transform: translateY(-2px);
+}
+
+.driver-skills i {
+    color: #f59e0b;
+    margin-right: 5px;
 }
 
 .features-grid {
@@ -392,7 +518,7 @@ section h2::after {
 .feature h4 {
     font-size: 1.3em;
     margin-bottom: 15px;
-    color: #1e293b;
+    color: #9ca3af;
 }
 
 /* Services Section */
@@ -449,7 +575,7 @@ section h2::after {
 }
 
 .service-item h3 {
-    color: #1e293b;
+    color: #9ca3af;
     font-size: 1.5em;
     margin-bottom: 20px;
     font-weight: 700;
@@ -464,7 +590,7 @@ section h2::after {
 
 .service-features li {
     padding: 8px 0;
-    color: #64748b;
+    color: #9ca3af;
 }
 
 .service-features i {
@@ -482,24 +608,79 @@ section h2::after {
 
 .fleet-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     margin-top: 50px;
 }
 
 .fleet-item {
     background: white;
-    padding: 40px 30px;
+    padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     text-align: center;
-    transition: transform 0.3s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(245,158,11,0.1);
+    position: relative;
+    overflow: hidden;
 }
 
 .fleet-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(30,41,59,0.15);
+    border: 1px solid #f59e0b;
 }
 
+.fleet-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #f59e0b, #f97316);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.fleet-item:hover::before {
+    transform: scaleX(1);
+}
+
+/* Fleet Photo Styling */
+.fleet-image-photo {
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.fleet-image-photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    border-radius: 15px;
+}
+
+.fleet-item:hover .fleet-image-photo img {
+    transform: scale(1.05);
+}
+
+.fleet-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(245,158,11,0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Original fleet styling for backward compatibility */
 .fleet-image {
     font-size: 5em;
     color: #f59e0b;
@@ -508,14 +689,21 @@ section h2::after {
 
 .fleet-item h3 {
     font-size: 1.4em;
-    color: #1e293b;
+    color: #9ca3af;
     margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.fleet-item p {
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .fleet-features {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin: 20px 0;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -525,12 +713,118 @@ section h2::after {
     padding: 8px 12px;
     border-radius: 15px;
     font-size: 0.9em;
-    color: #475569;
+    color: #9ca3af;
+    border: 1px solid rgba(245,158,11,0.1);
+    transition: all 0.3s ease;
+}
+
+.fleet-features span:hover {
+    background: rgba(245,158,11,0.1);
+    border-color: #f59e0b;
+    transform: translateY(-2px);
 }
 
 .fleet-features i {
     margin-right: 5px;
     color: #f59e0b;
+}
+
+/* Fleet Specifications */
+.fleet-specs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.spec-item {
+    text-align: center;
+    flex: 1;
+    min-width: 80px;
+}
+
+.spec-item i {
+    display: block;
+    font-size: 1.5em;
+    color: #f59e0b;
+    margin-bottom: 8px;
+}
+
+.spec-item span {
+    font-size: 0.85em;
+    color: #9ca3af;
+    font-weight: 600;
+}
+
+/* Fleet Gallery Section */
+.fleet-gallery {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.fleet-gallery h3 {
+    font-size: 2.2em;
+    color: #9ca3af;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.fleet-gallery h3 i {
+    color: #f59e0b;
+    margin-right: 15px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 20px 15px 15px;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-overlay span {
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
 /* Contact Section */
@@ -550,7 +844,7 @@ section h2::after {
 
 .contact-info h3 {
     font-size: 1.8em;
-    color: #1e293b;
+    color: #9ca3af;
     margin-bottom: 30px;
 }
 
@@ -569,13 +863,13 @@ section h2::after {
 
 .contact-item h4 {
     margin: 0 0 8px 0;
-    color: #1e293b;
+    color: #9ca3af;
     font-size: 1.1em;
 }
 
 .contact-item p {
     margin: 0;
-    color: #64748b;
+    color: #9ca3af;
     line-height: 1.6;
 }
 
@@ -588,7 +882,7 @@ section h2::after {
 
 .contact-form h3 {
     font-size: 1.8em;
-    color: #1e293b;
+    color: #9ca3af;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -618,6 +912,7 @@ section h2::after {
     transition: all 0.3s;
     background: #f9fafb;
     box-sizing: border-box;
+    color: #9ca3af;
 }
 
 .contact-form input:focus,
@@ -703,7 +998,7 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #cbd5e1;
+    color: #d1d5db;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -720,7 +1015,7 @@ footer {
     display: inline-block;
     margin-right: 15px;
     font-size: 1.5em;
-    color: #cbd5e1;
+    color: #d1d5db;
     transition: all 0.3s;
 }
 
@@ -731,7 +1026,7 @@ footer {
 
 .footer-contact p {
     margin: 10px 0;
-    color: #cbd5e1;
+    color: #d1d5db;
 }
 
 .footer-contact i {
@@ -744,7 +1039,41 @@ footer {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #475569;
-    color: #94a3b8;
+    color: #d1d5db;
+}
+
+.developer-credit {
+    margin-top: 10px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.developer-credit a {
+    color: #f59e0b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.developer-credit a:hover {
+    color: #fbbf24;
+    text-shadow: 0 0 8px rgba(245,158,11,0.5);
+}
+
+.developer-credit a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+    transition: width 0.3s ease;
+}
+
+.developer-credit a:hover::after {
+    width: 100%;
 }
 
 /* Animations */
@@ -1104,6 +1433,62 @@ body.page-loaded .feature {
         to { opacity: 1; }
     }
     
+    /* Driver Section Mobile Styles */
+    .drivers-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .driver-card {
+        padding: 20px;
+    }
+    
+    .driver-image img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .driver-skills {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .driver-skills span {
+        font-size: 0.8em;
+    }
+    
+    /* Fleet Gallery Mobile Styles */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .gallery-item img {
+        height: 150px;
+    }
+    
+    .fleet-image-photo img {
+        height: 200px;
+    }
+    
+    .fleet-specs {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .spec-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .spec-item i {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+    
     .header-content h1 {
         font-size: 2.8em;
     }
@@ -1419,6 +1804,7 @@ body.page-loaded .feature {
     
     .contact-item p {
         font-size: 0.9em;
+        color: #9ca3af;
     }
     
     .contact-form-container {
@@ -1465,6 +1851,7 @@ body.page-loaded .feature {
     .footer-section ul li {
         margin-bottom: 5px;
         font-size: 0.9em;
+        color: #d1d5db;
     }
     
     .social-links a {
@@ -1475,6 +1862,7 @@ body.page-loaded .feature {
     .footer-contact p {
         font-size: 0.9em;
         margin: 8px 0;
+        color: #d1d5db;
     }
     
     .footer-bottom {
