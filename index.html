@@ -2,67 +2,588 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EshanKDH - KDH Van Hire for Tourists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="EshanKDH">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1e293b">
+    <meta name="msapplication-navbutton-color" content="#1e293b">
+    <meta name="msapplication-TileColor" content="#1e293b">
+    <title>EshanKDH - Premium Van Hire Services | Tourist Transportation Sri Lanka</title>
+    <meta name="description" content="Professional van hire services for tourists in Sri Lanka. Explore Kandy, Dambulla, Sigiriya with EshanKDH - your trusted travel partner.">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preconnect for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- iOS Safari optimizations -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cpath fill='%23f59e0b' d='M0 0h180v180H0z'/%3E%3Cpath fill='%23fff' d='M45 60h90v60H45z'/%3E%3C/svg%3E">
+    
+    <!-- Android Chrome optimizations -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23f59e0b' d='M0 0h32v32H0z'/%3E%3Cpath fill='%23fff' d='M8 12h16v8H8z'/%3E%3C/svg%3E">
+    
+    <!-- Manifest for PWA capabilities -->
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiRXNoYW5LREgiLCJzaG9ydF9uYW1lIjoiRXNoYW5LREgiLCJzdGFydF91cmwiOiIuLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwidGhlbWVfY29sb3IiOiIjMWUyOTNiIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmOGZhZmMifQ==">
 </head>
 <body>
     <header>
-        <h1>EshanKDH</h1>
-        <p>KDH Van Hire for Tourists</p>
+        <div class="header-content">
+            <h1><i class="fas fa-van-shuttle"></i> EshanKDH</h1>
+            <p class="subtitle">Premium Van Hire Services for Discerning Travelers</p>
+            <div class="header-badges">
+                <span class="badge">Licensed & Insured</span>
+                <span class="badge">24/7 Service</span>
+                <span class="badge">Expert Drivers</span>
+            </div>
+        </div>
     </header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-container">
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-menu">
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+                <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                <a href="#services"><i class="fas fa-concierge-bell"></i> Services</a>
+                <a href="#fleet"><i class="fas fa-car"></i> Fleet</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </div>
     </nav>
-    <section class="hero">
-        <h1>Welcome to EshanKDH</h1>
-        <p>Your trusted van hire service for exploring Kandy, Dambulla, and beyond. Professional, safe, and comfortable rides for tourists.</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Sri Lanka in Comfort</h1>
+            <p>Experience the cultural triangle with our premium van hire services. Professional drivers, modern vehicles, and unforgettable journeys through Kandy, Dambulla, Sigiriya, and beyond.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Book Now</a>
+                <a href="#services" class="btn-secondary">View Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5★</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>EshanKDH specializes in providing high-quality van hire services tailored for tourists visiting the cultural triangle of Sri Lanka. With years of experience, we ensure safe, reliable, and memorable journeys through Kandy, Dambulla, Sigiriya, and other scenic locations. Our fleet includes modern, well-maintained vans equipped with air conditioning and experienced drivers who know the best routes and hidden gems.</p>
+        <div class="container">
+            <h2><i class="fas fa-star"></i> About EshanKDH</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">EshanKDH is Sri Lanka's premier van hire service, specializing in luxury tourist transportation throughout the island's most captivating destinations.</p>
+                    <p>With over a decade of experience in the tourism industry, we have built our reputation on reliability, safety, and exceptional customer service. Our expert drivers are not just chauffeurs – they're your local guides, cultural ambassadors, and safety experts rolled into one.</p>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Fully Licensed</h4>
+                            <p>All vehicles and drivers are properly licensed and insured</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>Punctual Service</h4>
+                            <p>We value your time and ensure prompt, reliable service</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h4>Local Expertise</h4>
+                            <p>Deep knowledge of routes, attractions, and hidden gems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-item">
-            <h3>Airport Transfers</h3>
-            <p>Reliable pick-up and drop-off services from airports to your destination.</p>
-        </div>
-        <div class="service-item">
-            <h3>City Tours</h3>
-            <p>Guided tours around Kandy, including the Temple of the Tooth Relic and botanical gardens.</p>
-        </div>
-        <div class="service-item">
-            <h3>Day Trips</h3>
-            <p>Excursions to Dambulla Cave Temple, Sigiriya Rock Fortress, and more.</p>
-        </div>
-        <div class="service-item">
-            <h3>Custom Packages</h3>
-            <p>Tailored itineraries for groups and families to suit your travel needs.</p>
-        </div>
-        <div class="service-item">
-            <h3>24/7 Support</h3>
-            <p>Round-the-clock assistance for any queries or emergencies during your trip.</p>
-        </div>
-        <div class="service-item">
-            <h3>Vehicle Rentals</h3>
-            <p>Flexible rental options with self-drive or chauffeur services.</p>
+        <div class="container">
+            <h2><i class="fas fa-concierge-bell"></i> Our Premium Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h3>Airport Transfers</h3>
+                    <p>Luxury airport pick-up and drop-off services with flight tracking and complimentary waiting time.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Flight tracking</li>
+                        <li><i class="fas fa-check"></i> Meet & greet service</li>
+                        <li><i class="fas fa-check"></i> Luggage assistance</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>City Tours</h3>
+                    <p>Comprehensive guided tours of Kandy including the Temple of the Tooth Relic and Royal Botanical Gardens.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Expert local guides</li>
+                        <li><i class="fas fa-check"></i> Flexible itineraries</li>
+                        <li><i class="fas fa-check"></i> Cultural insights</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Day Trips</h3>
+                    <p>Exciting excursions to Dambulla Cave Temple, Sigiriya Rock Fortress, and other UNESCO World Heritage sites.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> UNESCO sites</li>
+                        <li><i class="fas fa-check"></i> Photography stops</li>
+                        <li><i class="fas fa-check"></i> Lunch arrangements</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Custom Packages</h3>
+                    <p>Personalized itineraries crafted for groups and families to match your unique travel preferences.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tailored routes</li>
+                        <li><i class="fas fa-check"></i> Group discounts</li>
+                        <li><i class="fas fa-check"></i> Special requests</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock assistance for any queries, emergencies, or last-minute changes during your journey.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Emergency support</li>
+                        <li><i class="fas fa-check"></i> Live tracking</li>
+                        <li><i class="fas fa-check"></i> Instant communication</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Vehicle Rentals</h3>
+                    <p>Flexible rental options with professional chauffeur services or self-drive alternatives.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Modern fleet</li>
+                        <li><i class="fas fa-check"></i> Chauffeur available</li>
+                        <li><i class="fas fa-check"></i> GPS equipped</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <h2><i class="fas fa-car"></i> Our Premium Fleet</h2>
+            <div class="fleet-grid">
+                <div class="fleet-item">
+                    <div class="fleet-image">
+                        <i class="fas fa-van-shuttle"></i>
+                    </div>
+                    <h3>Luxury Vans</h3>
+                    <p>8-seater air-conditioned vans perfect for families and small groups</p>
+                    <div class="fleet-features">
+                        <span><i class="fas fa-users"></i> 8 Passengers</span>
+                        <span><i class="fas fa-snowflake"></i> AC</span>
+                        <span><i class="fas fa-wifi"></i> WiFi</span>
+                    </div>
+                </div>
+                <div class="fleet-item">
+                    <div class="fleet-image">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Mini Coaches</h3>
+                    <p>15-seater vehicles ideal for medium-sized groups and extended tours</p>
+                    <div class="fleet-features">
+                        <span><i class="fas fa-users"></i> 15 Passengers</span>
+                        <span><i class="fas fa-snowflake"></i> AC</span>
+                        <span><i class="fas fa-suitcase"></i> Luggage Space</span>
+                    </div>
+                </div>
+                <div class="fleet-item">
+                    <div class="fleet-image">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Premium Cars</h3>
+                    <p>Comfortable sedans for couples and business travelers seeking luxury</p>
+                    <div class="fleet-features">
+                        <span><i class="fas fa-users"></i> 4 Passengers</span>
+                        <span><i class="fas fa-crown"></i> Luxury</span>
+                        <span><i class="fas fa-user-tie"></i> Chauffeur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p>Phone: +94 123 456 789 | Email: info@eshankdh.com | Address: Kandy, Sri Lanka</p>
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+94 123 456 789</p>
+                            <p>+94 987 654 321</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@eshankdh.com</p>
+                            <p>bookings@eshankdh.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Peradeniya Road<br>Kandy, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Operating Hours</h4>
+                            <p>24/7 Service Available<br>Office: 8:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#" method="post">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="airport">Airport Transfer</option>
+                                <option value="city">City Tour</option>
+                                <option value="day-trip">Day Trip</option>
+                                <option value="custom">Custom Package</option>
+                                <option value="rental">Vehicle Rental</option>
+                            </select>
+                            <i class="fas fa-list"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your travel plans..." rows="5" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2025 EshanKDH. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-van-shuttle"></i> EshanKDH</h3>
+                <p>Your premier partner for luxury van hire services in Sri Lanka. Experience the island's beauty with comfort and style.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Airport Transfers</a></li>
+                    <li><a href="#">City Tours</a></li>
+                    <li><a href="#">Day Trips</a></li>
+                    <li><a href="#">Custom Packages</a></li>
+                    <li><a href="#">Vehicle Rentals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +94 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@eshankdh.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kandy, Sri Lanka</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EshanKDH. All rights reserved. | Designed with ♥ for amazing journeys</p>
+        </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle functionality - Professional Implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            const body = document.body;
+            
+            let isMenuOpen = false;
+
+            // Enhanced mobile menu toggle with professional animations
+            function toggleMobileMenu() {
+                isMenuOpen = !isMenuOpen;
+                
+                mobileMenuToggle.classList.toggle('active', isMenuOpen);
+                navMenu.classList.toggle('active', isMenuOpen);
+                
+                // Professional body scroll management
+                if (isMenuOpen) {
+                    body.style.overflow = 'hidden';
+                    body.style.paddingRight = getScrollbarWidth() + 'px';
+                    
+                    // Add stagger animation delay to menu items
+                    navLinks.forEach((link, index) => {
+                        link.style.animationDelay = `${0.1 + (index * 0.05)}s`;
+                    });
+                } else {
+                    body.style.overflow = '';
+                    body.style.paddingRight = '';
+                }
+                
+                // Add professional haptic feedback for mobile devices
+                if (navigator.vibrate) {
+                    navigator.vibrate(50);
+                }
+            }
+
+            // Calculate scrollbar width for layout shifts prevention
+            function getScrollbarWidth() {
+                const outer = document.createElement('div');
+                outer.style.visibility = 'hidden';
+                outer.style.overflow = 'scroll';
+                outer.style.msOverflowStyle = 'scrollbar';
+                document.body.appendChild(outer);
+                
+                const inner = document.createElement('div');
+                outer.appendChild(inner);
+                
+                const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth);
+                outer.parentNode.removeChild(outer);
+                
+                return scrollbarWidth;
+            }
+
+            // Professional menu toggle event
+            mobileMenuToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleMobileMenu();
+            });
+
+            // Enhanced menu link click handling
+            navLinks.forEach((link, index) => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    // Close menu with professional animation
+                    if (isMenuOpen) {
+                        // Add exit animation to links
+                        navLinks.forEach((navLink, linkIndex) => {
+                            navLink.style.animation = `slideOutRight 0.3s ease-in-out ${linkIndex * 0.05}s both`;
+                        });
+                        
+                        // Close menu after animation
+                        setTimeout(() => {
+                            toggleMobileMenu();
+                            
+                            // Reset animations
+                            navLinks.forEach(navLink => {
+                                navLink.style.animation = '';
+                            });
+                            
+                            // Professional smooth scroll to target
+                            if (targetSection) {
+                                const offsetTop = targetSection.offsetTop - 70;
+                                window.scrollTo({
+                                    top: offsetTop,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }, 200);
+                    } else if (targetSection) {
+                        // Direct scroll if menu is already closed
+                        const offsetTop = targetSection.offsetTop - 70;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Professional outside click handling
+            document.addEventListener('click', function(event) {
+                const nav = document.querySelector('nav');
+                const isClickInsideNav = nav.contains(event.target);
+                
+                if (!isClickInsideNav && isMenuOpen) {
+                    // Add professional exit animation
+                    navLinks.forEach((link, index) => {
+                        link.style.animation = `slideOutRight 0.3s ease-in-out ${index * 0.03}s both`;
+                    });
+                    
+                    setTimeout(() => {
+                        toggleMobileMenu();
+                        
+                        // Reset animations
+                        navLinks.forEach(link => {
+                            link.style.animation = '';
+                        });
+                    }, 150);
+                }
+            });
+
+            // Enhanced window resize handling
+            let resizeTimeout;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    if (window.innerWidth > 768 && isMenuOpen) {
+                        // Close menu on desktop view
+                        isMenuOpen = false;
+                        mobileMenuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        body.style.overflow = '';
+                        body.style.paddingRight = '';
+                        
+                        // Reset all animations
+                        navLinks.forEach(link => {
+                            link.style.animation = '';
+                            link.style.animationDelay = '';
+                        });
+                    }
+                }, 100);
+            });
+
+            // Professional keyboard navigation support
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && isMenuOpen) {
+                    toggleMobileMenu();
+                }
+                
+                // Tab navigation within menu
+                if (e.key === 'Tab' && isMenuOpen) {
+                    const focusableElements = navMenu.querySelectorAll('a');
+                    const firstElement = focusableElements[0];
+                    const lastElement = focusableElements[focusableElements.length - 1];
+                    
+                    if (e.shiftKey && document.activeElement === firstElement) {
+                        e.preventDefault();
+                        lastElement.focus();
+                    } else if (!e.shiftKey && document.activeElement === lastElement) {
+                        e.preventDefault();
+                        firstElement.focus();
+                    }
+                }
+            });
+
+            // Professional scroll behavior for navigation highlight
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    const sections = document.querySelectorAll('section[id], .hero[id]');
+                    const scrollPos = window.pageYOffset + 100;
+                    
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.offsetHeight;
+                        const sectionId = section.getAttribute('id');
+                        const navLink = document.querySelector(`nav a[href="#${sectionId}"]`);
+                        
+                        if (navLink && scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                            // Remove active class from all links
+                            navLinks.forEach(link => link.classList.remove('nav-active'));
+                            // Add active class to current link
+                            navLink.classList.add('nav-active');
+                        }
+                    });
+                }, 10);
+            });
+
+            // Initialize professional loading animations
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 100);
+        });
+
+        // Professional page load optimization
+        window.addEventListener('load', function() {
+            // Remove loading states and optimize performance
+            document.body.classList.add('page-loaded');
+            
+            // Initialize intersection observer for animations
+            if ('IntersectionObserver' in window) {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate-in');
+                        }
+                    });
+                }, observerOptions);
+                
+                // Observe sections for scroll animations
+                document.querySelectorAll('section, .service-item, .fleet-item, .feature').forEach(el => {
+                    observer.observe(el);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
